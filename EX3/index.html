@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  onsubmit="return valider()">
+        <input type="text" id="text" size="60">
+        <span id="text-erreur"></span>
+            
+        <div>
+            <input type="submit" value="Envoyer"   >
+        </div>
+    </form>
+    <script>
+        function valider() {
+  if(document.getElementById('text').value == '') {
+    document.getElementById('text-erreur').innerHTML = 'erreur'
+    
+  } else {
+    document.getElementById('text-erreur').innerHTML = ''
+    alert('Le formulaire peut être envoyé');
+    
+  }
+} 
+    </script>
+</body>
+</html>

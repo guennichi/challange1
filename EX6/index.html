@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <p>
+    Vous devez trouver un nombre entre 1 et 1000
+  </p>
+  <div>
+    <form id="myForm" onsubmit="return test();">
+      <div>
+        <input type="number" id="nmbre_proposé" >
+        <input type="submit" value="Tester">
+      </div>
+    </form>
+  </div>
+  
+   <script>
+    
+    function test() {
+     var nmbre_proposé = nmbre_proposé.value;
+     var random = Math.floor((Math.random()*1000)+1);
+    if(nmbre_proposé<1 || nmbre_proposé>1000){
+      alert("erreur:donner un nombre entre 1 et 1000")
+    }
+    else if(nmbre_proposé  < random) {
+      alert("Le nombre à trouver est plus grand")
+     
+    }else if(nmbre_proposé  > random) {
+      alert("Le nombre à trouver est plus petit") 
+      
+    } else {
+       alert("Vous avez trouvé la solution ")
+    }
+  
+ 
+}
+ 
+
+
+ 
+    
+   </script> 
+</body>
+</html>
